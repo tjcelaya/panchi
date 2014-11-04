@@ -62,7 +62,7 @@ public class GAME extends ApplicationAdapter {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         batch.begin();
 
-        D.render();
+        D.render(Gdx.graphics.getDeltaTime());
 
         batch.end();
     }

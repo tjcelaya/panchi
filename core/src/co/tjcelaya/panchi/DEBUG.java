@@ -25,9 +25,9 @@ public class DEBUG {
 
     }
 
-    public void render() {
+    public void render(float delta) {
 
-        G.I.process();
+        G.I.process(delta);
 
         write(G.I.p1DirHist.ring.toString());
 

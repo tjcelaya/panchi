@@ -25,7 +25,7 @@ public class PeekableRingBuffer<T> {
 
     public T top() { return top; }
 
-    public boolean addDifferent(T el) {
+    public boolean addFresh(T el) {
         return el != top && ring.add(top = el);
     }
 }
